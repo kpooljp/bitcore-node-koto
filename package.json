@@ -1,5 +1,5 @@
 {
-  "name": "bitcore-node-zcash",
+  "name": "bitcore-node-koto",
   "description": "Full node with extended capabilities using Bitcore and Zcash",
   "author": "BitPay <dev@bitpay.com>",
   "version": "3.1.2",
