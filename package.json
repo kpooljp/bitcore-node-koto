@@ -2,7 +2,7 @@
   "name": "bitcore-node-koto",
   "description": "Full node with extended capabilities using Bitcore and Zcash",
   "author": "BitPay <dev@bitpay.com>",
-  "version": "3.1.2",
+  "version": "5.0.0-beta.44",
   "main": "./index.js",
   "repository": "git://github.com/kpooljp/bitcore-node-koto.git",
   "homepage": "https://github.com/kpooljp/bitcore-node-koto",
@@ -35,10 +35,6 @@
   },
   "scripts": {
     "test": "mocha -R spec --recursive",
-    "regtest": "./scripts/regtest",
-    "jshint": "jshint --reporter=node_modules/jshint-stylish ./lib",
-    "coverage": "istanbul cover _mocha -- --recursive",
-    "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "tags": [
     "koto",
@@ -47,7 +43,9 @@
   "dependencies": {
     "async": "^1.3.0",
     "bitcoind-rpc": "^0.6.0",
+    "bcoin": "bitpay/bcoin#v1.0.0-beta.14+cash", 
     "bitcore-lib-koto": "kpooljp/bitcore-lib-koto",
+    "bitcore-p2p": "5.0.0-beta.1",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",
